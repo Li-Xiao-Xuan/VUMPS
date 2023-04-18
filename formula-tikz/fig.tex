@@ -18,6 +18,24 @@ hidden/.style={draw opacity=0, circle},
 \maketitle
 
 
+\section*{T}
+\begin{tikzpicture}
+    \node[circle] (c1) at (0,0) {};
+    
+    %lables
+    \node[hidden] at (0,-0.4) {T};
+    \node[hidden] at (-0.7,0) {$D$};
+    \node[hidden] at (0.7,0) {$D$};
+    \node[hidden] at (0,0.7) {$d$};
+
+    \draw[-] (c1.north)--(0,0.5);
+    \draw[-] (c1.west)--(-0.5,0);
+    \draw[-] (c1.east)--(0.5,0);
+\end{tikzpicture}
+
+
+
+
 \section{ $\braket{\Psi|\Psi}=(T^*T)^M=LR$ }
 \begin{tikzpicture}
     \tikzmath{ \shift=0.3; };  % interval between up and down vertical lines
